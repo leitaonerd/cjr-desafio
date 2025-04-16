@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>decida</title>
+</head>
+<body>
+    <h1>Tralalero irá decidir!</h1>
+    <img 
+    height=380px 
+    src="https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Ftralalero-tralala-v0-mzi9a5z63wre1.jpeg%3Fauto%3Dwebp%26s%3D7b2e78055bf8959521b184a04e68229fa4b359a7&rdt=54018" 
+    alt="errorimage">
+    <div>
+        <input type="text" class="input1"> ou <input type="text" class="input2">
+        <button type="button" onclick="receba()"> Perguntar </button>
+    </div> 
+</body>
+
+<style>
+    button {
+        background-color: rgb(192, 217, 248);
+    }
+    body {
+	background-color: #7a7d9f;
+	text-align: center;
+}
+</style>
+
+<script>
+	function receba(){
+        var escolha = Math.floor(Math.random() * 10);
+        if (escolha%2)
+            alert("tralalero tralala escolheu "+document.querySelector(".input1").value)
+        else
+            alert("tralalero tralala escolheu "+document.querySelector(".input2").value)
+        }
+</script>
+
+</html>
